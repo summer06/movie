@@ -1,13 +1,13 @@
 /*main style*/
 body {
-	background-image: url("background.png");
+	background-image: url("images/background.png");
 	margin: 0;
 	padding: 0;
 	font: 8pt Verdana, Tahoma, sans-serif;
 }
 
 .banner {
-	background-image: url("bannerbackground.png");
+	background-image: url("images/bannerbackground.png");
 	background-repeat: repeat-x;
 	height: 50px;
 }
@@ -32,9 +32,7 @@ body {
 	text-align: center;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	/*font: 8pt Verdana, Tahoma, sans-serif;*/
+    padding: 5px;
 }
 
 /*left side style*/
@@ -46,7 +44,7 @@ body {
 
 .subheading {
 	margin: 0;
-	background-image: url("rottenbackground.png");
+	background-image: url("images/rottenbackground.png");
 	background-repeat: repeat-x;
 	height: 83px;
 }
@@ -56,39 +54,37 @@ body {
 }
 
 .big {
-	vertical-align: bottom;
 	font: bold 48pt Verdana, Tahoma, sans-serif;
 	color: red;
 }
 
 .small {
-	position: relative;
-	bottom: 10px;
-	/*font: 8pt Verdana, Tahoma, sans-serif;*/
 	color: white;
 }
 
 .content {
 	margin: 0;
-	padding: 0 2%;
 }
 
 .leftcomment {
 	margin: 0;
 	float: left;
-	width: 258.5px;
+	width: 47%;
+	padding-left: 2%;
 }
 
 .rightcomment {
 	margin: 0;
 	float: right;
-	width: 258.5px;
+	width: 47%;
+	padding-right: 2%;
 }
 
 p.comment {
 	padding: 8px;
 	background-color: #E1D697;
 	border: 2px solid gray;
+	overflow: hidden;
 }
 q {
 	font-weight: bold;
@@ -108,7 +104,9 @@ p.information {
 	margin-bottom: 3em;
 	vertical-align: top;
 	font-style: italic;
-	/*font: italic 8pt Verdana, Tahoma, sans-serif;*/
+}
+p.information > span {
+	font-style: normal;
 }
 
 /*right side style*/
@@ -117,29 +115,28 @@ p.information {
 	width: 250px;
 	padding-bottom: 10px;
 	background-color: #A2B964;
+	font-family: Arial, sans-serif;
 }
 
 .overview {
-	padding-left: 10px;
+	padding:0 10px;
 }
 
-dt#first {
-	padding-top: 0;
+dl {
+	margin: 0;
 }
 
 dl dt {
 	font-weight: bold;
 	font-variant: small-caps;
-	/*font:bold small-caps 8pt Verdana, Tahoma, sans-serif;*/
 	padding-top: 1em;
 }
-dl dd {
-	/*font:normal 8pt Verdana, Tahoma, sans-serif*/
-}
+
 
 /*w3c style*/
 .validor {
-	float: right;
-	margin-right: -102px;
-	margin-top: -64px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: none;
 }
