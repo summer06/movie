@@ -10,6 +10,7 @@ body {
 	background-image: url("images/bannerbackground.png");
 	background-repeat: repeat-x;
 	height: 50px;
+	text-align: center;
 }
 
 .heading {
